@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include khatavahi_process_manufacturing *.css
+recursive-include khatavahi_process_manufacturing *.csv
+recursive-include khatavahi_process_manufacturing *.html
+recursive-include khatavahi_process_manufacturing *.ico
+recursive-include khatavahi_process_manufacturing *.js
+recursive-include khatavahi_process_manufacturing *.json
+recursive-include khatavahi_process_manufacturing *.md
+recursive-include khatavahi_process_manufacturing *.png
+recursive-include khatavahi_process_manufacturing *.py
+recursive-include khatavahi_process_manufacturing *.svg
+recursive-include khatavahi_process_manufacturing *.txt
+recursive-exclude khatavahi_process_manufacturing *.pyc

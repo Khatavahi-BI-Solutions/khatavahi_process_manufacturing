@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-12-04 16:02:28.341812",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "department",
+  "process_type",
+  "process_name",
+  "column_break_5",
+  "status",
+  "workstation",
+  "costing_method",
+  "warehouses_section",
+  "src_warehouse",
+  "wip_warehouse",
+  "column_break_12",
+  "fg_warehouse",
+  "scrap_warehouse",
+  "materials_section",
+  "materials",
+  "sb_finished_products",
+  "finished_products",
+  "scrap_section",
+  "scrap",
+  "time_section",
+  "start_dt",
+  "end_dt",
+  "company",
+  "operation_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PO-"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Manufacturing Department"
+  },
+  {
+   "fieldname": "process_type",
+   "fieldtype": "Link",
+   "label": "Process Type",
+   "options": "Process Type"
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Link",
+   "label": "Process Name",
+   "options": "Process Definition"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nIn Process\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "label": "Workstation",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "costing_method",
+   "fieldtype": "Select",
+   "label": "Costing Method",
+   "options": "Physical measurement\nRelative Sales Value"
+  },
+  {
+   "fieldname": "warehouses_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouses"
+  },
+  {
+   "fieldname": "src_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "wip_warehouse",
+   "fieldtype": "Link",
+   "label": "Work-in-Progress Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fg_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "scrap_warehouse",
+   "fieldtype": "Link",
+   "label": "Scrap Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "materials_section",
+   "fieldtype": "Section Break",
+   "label": "Materials"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Table",
+   "label": "Materials",
+   "options": "Process Order Item"
+  },
+  {
+   "fieldname": "sb_finished_products",
+   "fieldtype": "Section Break",
+   "label": "Finished Products"
+  },
+  {
+   "fieldname": "finished_products",
+   "fieldtype": "Table",
+   "label": "Finished Products",
+   "options": "Process Order Item"
+  },
+  {
+   "fieldname": "scrap_section",
+   "fieldtype": "Section Break",
+   "label": "Scrap"
+  },
+  {
+   "fieldname": "scrap",
+   "fieldtype": "Table",
+   "label": "Scrap",
+   "options": "Process Order Item"
+  },
+  {
+   "fieldname": "time_section",
+   "fieldtype": "Section Break",
+   "label": "Time"
+  },
+  {
+   "fieldname": "start_dt",
+   "fieldtype": "Datetime",
+   "label": "Start Date Time"
+  },
+  {
+   "fieldname": "end_dt",
+   "fieldtype": "Datetime",
+   "label": "End Date Time"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "operation_hours",
+   "fieldtype": "Datetime",
+   "label": "Hours of Operation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-04 16:12:23.767247",
+ "modified_by": "Administrator",
+ "module": "Khatavahi Process Manufacturing",
+ "name": "Process Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:process_name",
+ "creation": "2022-12-04 15:44:26.580921",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "process_name",
+  "department",
+  "process_type",
+  "column_break_4",
+  "workstation",
+  "costing_method",
+  "value_scrap",
+  "section_break_8",
+  "materials",
+  "finished_products_section",
+  "finished_products",
+  "section_break_12",
+  "scrap"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Data",
+   "label": "Process Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Manufacturing Department"
+  },
+  {
+   "fieldname": "process_type",
+   "fieldtype": "Link",
+   "label": "Process Type",
+   "options": "Process Type"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "label": "Workstation",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "costing_method",
+   "fieldtype": "Select",
+   "label": "Costing Method",
+   "options": "Physical measurement\nRelative Sales Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "value_scrap",
+   "fieldtype": "Check",
+   "label": "Include Scrap in Valuation"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Materials"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Table",
+   "label": "Materials",
+   "options": "Process Item"
+  },
+  {
+   "fieldname": "finished_products_section",
+   "fieldtype": "Section Break",
+   "label": "Finished Products"
+  },
+  {
+   "fieldname": "finished_products",
+   "fieldtype": "Table",
+   "label": "Finished Products",
+   "options": "Process Item"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Scrap"
+  },
+  {
+   "fieldname": "scrap",
+   "fieldtype": "Table",
+   "label": "Scrap",
+   "options": "Process Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-04 15:53:59.196181",
+ "modified_by": "Administrator",
+ "module": "Khatavahi Process Manufacturing",
+ "name": "Process Definition",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
